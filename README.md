@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Deepak Rathi — Frontend Engineer Portfolio
 
-## Getting Started
+A modern frontend engineering portfolio built with Next.js and TypeScript. The project showcases professional project experience along with interactive engineering experiments focused on performance, server-state management, role-based access control, and application architecture.
 
-First, run the development server:
+## Live Portfolio
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Coming soon.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- TanStack Query
+- TanStack Virtual
+- React Flow
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Engineering Playground
 
-## Learn More
+The portfolio includes interactive experiments demonstrating practical frontend engineering concepts.
 
-To learn more about Next.js, take a look at the following resources:
+### React Performance Lab
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Demonstrates rendering large datasets and list virtualization using TanStack Virtual.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Focus:**
+- Large list rendering
+- Virtualization
+- Rendering performance
+- React optimization
 
-## Deploy on Vercel
+### React Query Lab
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Demonstrates server-state management using TanStack Query.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Focus:**
+- API data fetching
+- Caching
+- Query invalidation
+- Refetching
+- Loading and error states
+
+### RBAC Simulator
+
+An interactive role-based access control demonstration showing how application features can be controlled through centralized permissions.
+
+**Roles:**
+- Admin
+- Manager
+- Viewer
+
+**Focus:**
+- Role-based access control
+- Permission mapping
+- Conditional UI
+- Scalable authorization patterns
+
+### Architecture Explorer
+
+An interactive architecture visualization demonstrating a typical modern frontend application flow.
+
+**Architecture:**
+
+```text
+User
+  ↓
+React / Next.js
+  ├── TanStack Query
+  ↓
+API Layer
+  ↓
+Backend Services
+  ↓
+Database

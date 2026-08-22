@@ -88,19 +88,19 @@ export default function Home() {
             </p>
 
             <p className="pl-4">
-              experience: <span className="text-green-400">"6.5+ years"</span>,
+              experience: <span className="text-green-400">&quot;6.5+ years&quot;</span>,
             </p>
 
             <p className="pl-4">
-              focus: <span className="text-green-400">"Frontend"</span>,
+              focus: <span className="text-green-400">&quot;Frontend&quot;</span>,
             </p>
 
             <p className="pl-4">
-              stack: <span className="text-green-400">"React + Next.js"</span>,
+              stack: <span className="text-green-400">&quot;React + Next.js&quot;</span>,
             </p>
 
             <p className="pl-4">
-              location: <span className="text-green-400">"Gurugram"</span>,
+              location: <span className="text-green-400">&quot;Gurugram&quot;</span>,
             </p>
 
             <p>{"};"}</p>
@@ -198,7 +198,7 @@ export default function Home() {
     </div>
 
     <div className="mt-16">
-      {experience.map((job, index) => (
+      {experience.map((job) => (
         <div
           key={`${job.company}-${job.period}`}
           className="grid gap-8 border-t border-slate-800 py-10 md:grid-cols-[180px_1fr]"
@@ -306,7 +306,7 @@ export default function Home() {
       <section id="contact" className="border-t border-slate-800">
         <div className="mx-auto max-w-7xl px-6 py-24 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-cyan-400">
-            Let's connect
+            Let&apos;s connect
           </p>
 
           <h2 className="mt-4 text-4xl font-bold">
