@@ -69,6 +69,15 @@ export default function Home() {
             >
               LinkedIn
             </a>
+            <a
+  href="/resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-lg border border-slate-700 px-6 py-3 font-medium hover:bg-slate-900"
+            >
+ 
+  Resume
+</a>
           </div>
         </div>
 

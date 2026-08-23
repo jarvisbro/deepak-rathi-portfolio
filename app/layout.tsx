@@ -50,6 +50,14 @@ openGraph: {
   type: "website",
   locale: "en_US",
   siteName: "Deepak Rathi Portfolio",
+  images: [
+    {
+      url: "/og-image.png",
+      width: 1200,
+      height: 630,
+      alt: "Deepak Rathi - Senior Frontend Engineer",
+    },
+  ],
 },
 
 twitter: {
@@ -57,6 +65,7 @@ twitter: {
   title: "Deepak Rathi | Senior Frontend Engineer",
   description:
     "Senior Frontend Engineer specializing in React, Next.js, TypeScript and scalable frontend architecture.",
+  images: ["/og-image.png"],
 },
 
   robots: {
