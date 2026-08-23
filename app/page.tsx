@@ -88,32 +88,6 @@ export default function Home() {
     LinkedIn
   </a>
 </div>
-          {/* <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="#projects"
-              className="rounded-lg bg-white px-6 py-3 font-medium text-slate-950 hover:bg-slate-200"
-            >
-              View Projects
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/deepak-rathi-a7ab75127"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg border border-slate-700 px-6 py-3 font-medium hover:bg-slate-900"
-            >
-              LinkedIn
-            </a>
-            <a
-  href="/resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="rounded-lg border border-slate-700 px-6 py-3 font-medium hover:bg-slate-900"
-            >
- 
-  Resume
-</a>
-          </div> */}
         </div>
 
         {/* Developer card */}
@@ -189,7 +163,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        {/* <div className="grid gap-6 md:grid-cols-3">
           {projects.map((project) => (
            <a
   key={project.slug}
@@ -218,7 +192,78 @@ export default function Home() {
               </div>
             </a>
           ))}
+        </div> */}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+  {projects.map((project) => (
+    <article
+      key={project.slug}
+      className="group flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/40 p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-slate-900/70"
+    >
+      {/* Category */}
+      <p className="text-sm font-medium text-cyan-400">
+        {project.category}
+      </p>
+
+      {/* Title */}
+      <h3 className="mt-4 text-2xl font-bold text-white">
+        {project.title}
+      </h3>
+
+      {/* Company */}
+      <p className="mt-2 text-sm text-slate-500">
+        {project.company}
+      </p>
+
+      {/* Description */}
+      <p className="mt-5 leading-7 text-slate-400">
+        {project.description}
+      </p>
+
+      {/* Technologies */}
+      <div className="mt-6 flex flex-wrap gap-2">
+        {project.technologies.map((technology) => (
+          <span
+            key={technology}
+            className="rounded-md bg-slate-800 px-3 py-1.5 text-xs text-slate-300"
+          >
+            {technology}
+          </span>
+        ))}
+      </div>
+
+      {/* Contribution */}
+      <div className="mt-6 border-t border-slate-800 pt-5">
+        <p className="text-xs font-medium uppercase tracking-wider text-slate-500">
+          Engineering focus
+        </p>
+
+        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+          {project.focus.slice(0, 3).map((item) => (
+            <span
+              key={item}
+              className="text-sm text-slate-400"
+            >
+              {item}
+            </span>
+          ))}
         </div>
+      </div>
+
+      {/* Case Study */}
+      <div className="mt-auto pt-7">
+        <Link
+          href={`/projects/${project.slug}`}
+          className="inline-flex items-center gap-2 text-sm font-medium text-white transition group-hover:text-cyan-400"
+        >
+          View case study
+          <span className="transition-transform group-hover:translate-x-1">
+            →
+          </span>
+        </Link>
+      </div>
+    </article>
+  ))}
+</div>
       </section>
 <section
   id="experience"
