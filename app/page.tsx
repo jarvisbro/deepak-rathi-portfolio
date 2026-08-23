@@ -1,5 +1,6 @@
 import { projects } from "@/data/projects";
 import { experience } from "@/data/experience";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -52,8 +53,42 @@ export default function Home() {
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-400">
             Senior Frontend Engineer specializing in React, Next.js and TypeScript, with 6.5+ years building scalable enterprise and product applications.
           </p>
+<div className="flex flex-wrap gap-4">
+  <Link
+    href="#projects"
+    className="rounded-lg bg-white px-6 py-3 font-medium text-slate-950 transition hover:bg-slate-200"
+  >
+    View Projects
+  </Link>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+  <a
+    href="/resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-lg border border-slate-700 px-6 py-3 font-medium text-white transition hover:border-cyan-400 hover:text-cyan-400"
+  >
+    Resume
+  </a>
+
+  <a
+    href="https://github.com/jarvisbro"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-lg border border-slate-700 px-6 py-3 font-medium text-white transition hover:border-cyan-400 hover:text-cyan-400"
+  >
+    GitHub
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/deepak-rathi-a7ab75127"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-lg border border-slate-700 px-6 py-3 font-medium text-white transition hover:border-cyan-400 hover:text-cyan-400"
+  >
+    LinkedIn
+  </a>
+</div>
+          {/* <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#projects"
               className="rounded-lg bg-white px-6 py-3 font-medium text-slate-950 hover:bg-slate-200"
@@ -78,7 +113,7 @@ export default function Home() {
  
   Resume
 </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Developer card */}
